@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@import "sass-common.scss";
+
+#wrapper{
+  display: flex;
+  aside{
+    flex-shrink: 0;width: 250px;height: 100vh;border-right: 1px solid #ddd;
+    position: fixed;overflow: auto;
+  }
+}
