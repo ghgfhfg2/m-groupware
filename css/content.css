@@ -6,10 +6,122 @@
 #wrapper {
   display: flex; }
 
-#wrapper aside {
+aside#sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
   flex-shrink: 0;
   width: 250px;
   height: 100vh;
   border-right: 1px solid #ddd;
-  position: fixed;
-  overflow: auto; }
+  overflow: auto;
+  background: #293042; }
+
+aside#sidebar .logo-box {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px; }
+
+aside#sidebar .nav a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s; }
+
+aside#sidebar .nav a:hover {
+  color: white; }
+
+aside#sidebar .nav a:hover .ic-arrow {
+  color: white; }
+
+aside#sidebar .nav a.on .ic-arrow {
+  transform: rotate(225deg); }
+
+aside#sidebar .nav .depth_1 > li > a {
+  padding: 0.75rem 1rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+
+aside#sidebar .nav .depth_1 > li > a .ic-arrow {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s; }
+
+aside#sidebar .nav .depth_2 {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.2s;
+  transform-origin: top; }
+
+aside#sidebar .nav .depth_2 > li {
+  margin-bottom: 0.5rem; }
+
+aside#sidebar .nav .depth_2 > li > a {
+  font-size: 13px;
+  padding: 0 1rem; }
+
+#container {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  min-height: 100vh;
+  flex: 1;
+  padding-left: 250px; }
+
+#content {
+  padding: 2rem; }
+
+header#header {
+  padding: 1rem 2rem;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid #e2e2e2; }
+
+header#header .search-box {
+  position: relative; }
+
+header#header .search-box input {
+  width: 100%;
+  padding-right: 50px; }
+
+header#header .search-box button {
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  outline: none; }
+
+header#header .search-box .btn {
+  width: 20px;
+  height: 20px;
+  color: #888; }
+
+header#header .profile {
+  position: relative; }
+
+header#header .profile .btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row; }
+
+header#header .profile .btn .name {
+  display: inline-block;
+  margin-right: 0.7rem;
+  font-size: 1rem; }
+
+header#header .profile .btn .ic-arrow {
+  margin-top: -1px; }
+
+header#header .profile .pop-over {
+  right: 0; }

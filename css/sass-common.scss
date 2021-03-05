@@ -62,6 +62,18 @@ $c-black:#111;
         margin-bottom: 0;
     }
 }
+@mixin bdTop($w:1px,$t:solid,$c:$bd-color) {
+    border-top : $w $t $c;    
+}
+@mixin bdBot($w:1px,$t:solid,$c:$bd-color) {
+    border-bottom : $w $t $c;    
+}
+@mixin bdLeft($w:1px,$t:solid,$c:$bd-color) {
+    border-left : $w $t $c;    
+}
+@mixin bdRight($w:1px,$t:solid,$c:$bd-color) {
+    border-right : $w $t $c;    
+}
 
 
 /* 인풋 */
